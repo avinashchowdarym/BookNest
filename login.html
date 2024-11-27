@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="shortcut icon" href="./Images/Logo.svg" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="./Images/BOOK NEST.png" alt="">
+                
+            </div>
+            <div class="search-bar">
+                <input type="text" name="search-bar" placeholder="Search Books Here " class="input-box" />
+                <i class="fa-solid fa-magnifying-glass" id="search-bar"></i>
+            </div>
+            <div class="icon-container">
+                <a href="#"> <i class="fa-solid fa-heart" id="favorite"></i></a>
+                <a href="#"> <i class="fa-solid fa-cart-shopping" id="cart"></i> </a>
+            </div>
+            <div class="user-profile">
+                <div class="user-logo">
+                    <img src="./Images/avatar3.png" alt="Avatar" />
+                </div>
+                <div class="user-info">
+                    <p class="name">Anurag Pal</p>
+                    <p class="user-email">mitanuragpal@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <span>Login</span>
+        </div>
+        <div class="registration-page">
+            <span>NEW CUSTOMER</span>
+            <p>
+                By creating an account with our store, you will be able to move
+                through the checkout process faster, store multiple shipping
+                addresses, view and track your orders in your account and more.
+            </p>
+            <button>Create an Account</button>
+        </div>
+        <div class="login-page">
+            <span>Login</span>
+            <p>If you have an account with us, please log in.</p>
+            <label for="Email" class="email">Email</label>
+            <input type="email" class="input-box" placeholder="Enter your Email" />
+            <label for="password">Password</label>
+            <input type="password" class="input-box" placeholder="Enter your Password" />
+            <button>Login</button>
+            <a href="#">Forgot Password</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: var(--bs-body-bg);
+}
+
+a {
+    text-decoration: none;
+    color: var(--title);
+}
+
+:root {
+    --primary-color: #EAA451;
+    --title: #1a1668;
+    --text-color: #777777;
+    --input-background: #f5f5f5;
+    --input-border: rgba(0, 0, 0, 0.125);
+    --background-color: #ffffff;
+    --bs-body-line-height: 1.6;
+    --bs-body-color: #777777;
+    --bs-body-bg: #ffffff;
+    --primary-hover: #e58c23;
+    --line-height: 1.6;
+    --book-name: 1.462rem;
+    --title-size: 2.5rem;
+}
+
+.blog-title {
+    margin-top: 2rem;
+    padding: 0.6rem;
+    text-align: center;
+    font-size: var(--title-size);
+    font-weight: bold;
+    color: var(--title);
+}
+
+.blog-desc {
+    padding: 1.5rem 18rem;
+    color: var(--text-color);
+}
+
+.articles {
+    margin: 0 9rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.article {
+    margin: 1rem;
+    border: 0.15rem solid var(--input-background);
+    border-radius: 0.45rem;
+}
+
+.article img {
+    height: 13.125rem;
+    width: 23.25rem;
+    border-radius: 0.45rem;
+
+}
+
+.article-title {
+    padding: 0.9rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--title);
+}
+
+.article-desc .sub-title {
+    padding: 0.9rem;
+    color: var(--text-color);
+    border-bottom: 0.1rem solid var(--text-color);
+}
+
+.article p {
+    margin: 0.4rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.article p img {
+    height: 1.2rem;
+    width: 1.2rem;
+}

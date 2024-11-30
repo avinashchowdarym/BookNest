@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>User Profile</title>
+    <link rel="shortcut icon" href="./Images/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
     <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <img src="./Images/Avatar 3.png" alt="Profile Picture" class="profile-pic">
+                <h2 class="name">David Matin</h2>
+                <p class="role">Web Developer</p>
+            </div>
+            <ul class="menu">
+                <li>Profile</li>
+                <li>My Favorite Books</li>
+                <li>Review</li>
+                <li>Log Out</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <section class="basic-info">
+                <span>BASIC INFORMATION</span>
+                <form>
+                    <div class="form-row">
+                        <label>Your Name:</label>
+                        <input type="text" placeholder="Alexander Weir">
+                    </div>
+                    <div class="form-row">
+                        <label>Professional&nbsp;Title: </label>
+                        <input type="text" placeholder="Web Designer">
+                    </div>
+                    <div class="form-row">
+                        <label>Languages:</label>
+                        <input type="text" placeholder="Language">
+                    </div>
+                    <div class="form-row">
+                        <label>Age:</label>
+                        <input type="text" placeholder="Age">
+                    </div>
+                    <div class="form-row full-width">
+                        <label>Description:</label>
+                        <textarea rows="4">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </textarea>
+                    </div>
+                </form>
+            </section>
+
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <form>
+                    <div class="form-row">
+                        <label>Contact Number:</label>
+                        <input type="text" placeholder="Contact Number">
+                    </div>
+                    <div class="form-row">
+                        <label>Email Address:</label>
+                        <input type="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-row">
+                        <label>Country:</label>
+                        <input type="text" placeholder="Country">
+                    </div>
+                    <div class="form-row">
+                        <label>City:</label>
+                        <input type="text" placeholder="City">
+                    </div>
+                </form>
+            </section>
+            <button>Save Info</button>
+
+        </main>
         
     </div>
 </body>
+
 </html>

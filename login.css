@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
-    background-color: var(--bs-body-bg);
-}
-
-
 :root {
     --primary-color: #EAA451;
     --title: #1a1668;
@@ -29,91 +23,159 @@ body {
 
 
 
-.header {
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 10rem;
-
+    min-height: 100vh;
+    background-color: #f9f9f9;
 }
 
-.logo img {
-    width: 15rem;
-    object-fit: contain;
-
-}
-
-.logo span {
-    font-weight: bold;
-    font-size: 4.9rem;
-}
-
-.logo p {
-    padding-left: 8rem;
-    color: #EAA451;
-}
-
-#search-bar {
-    position: absolute;
-    background-color: var(--input-background);
-    padding: 0.7em;
-    border-top-right-radius: 0.45rem;
-    border-bottom-right-radius: 0.45rem;
-    border: 0.1px solid var(--input-background);
-
-}
-
-.input-box {
-    padding: 0.7em;
-    width: 19rem;
-    border-top-left-radius: 0.45rem;
-    border-bottom-left-radius: 0.45rem;
-    font-size: 0.929rem;
-    font-weight: 510;
-    border: 0.1px solid var(--input-background);
-    background-color: var(--input-background);
-    position: relative;
-}
-
-.input-box:focus {
-    outline: none;
-}
-
-.icon-container a {
-    padding: 0.7rem;
-    color: var(--bs-body-color);
-
-}
-
-.icon-container #favorite,
-#cart {
-    font-size: 1.5rem;
-
-}
-.user-profile{
+.container {
+    margin: 0 7rem;
     display: flex;
+    justify-content: center;
     align-items: center;
-justify-content: center;
-
-
-}
-.user-logo img {
-    height: 4rem;
-    width: 4rem;
+    width: 100%;
 }
 
-.user-info{
-padding-left: 1rem;
-
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    padding: 3rem ;
+    border-right: 1px solid #ddd;
 }
-.user-info .name{
-    padding-bottom: 0.5rem;
+
+.profile-section {
+    background-color: #fae4cd;
+    padding: 1.5rem 2.5rem;
+    text-align: center;
+border-radius: 0.45rem;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+label{
+    padding: 0.6rem 0;
+}
+.name {
+    padding: 0.5rem;
+    font-size: 18px;
     font-weight: bold;
-    font-size: 1.3rem;
+    color: #0b154a;
+}
 
+.role {
+    color: #f2994a;
+    font-size: 14px;
+}
+
+.menu {
+    list-style: none;
+    /* padding-bottom: 3rem; */
+}
+
+.menu li {
+    padding: 1rem;
+    cursor: pointer;
+    color: #6b4f4f;
+    font-weight: 500;
+}
+
+.menu li:hover {
+    color: #0b154a;
+    background-color: var(--primary-color);
+    border-left: 1px solid var(--primary-hover);
+}
+
+/* Main Content */
+.content {
+    width: 75%;
+    padding: 20px;
+}
+
+span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    color: #0b154a;
+}
+
+.basic-info,
+.contact-info {
+    margin-bottom: 20px;
+}
+form{
+    margin-top: 1.8rem;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    border-top: 1px solid #EAA451;
+
+}
+.form-row {
+    /* padding-top: 2rem; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* margin-bottom: 15px; */
+}
+
+label {
+    width: 30%;
+    font-size: 1rem;
+    color: #484747;
+    /* font-weight: bold; */
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+input:focus, textarea:focus-visible{
+    border-color: (--primary-color) !important;
 
 }
 
-.user-info .user-email{
-    color: var(--text-color);
+textarea {
+    width: 205% !important;
+    resize: none;
+}
+
+.full-width {
+    flex-direction: column;
+}
+
+.full-width textarea {
+    width: 100%;
+}
+
+button{
+    margin: 1rem;
+    padding: 0.85rem 2.2rem;
+    border-radius: 0.56rem;
+    border: 0.001rem solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--title);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
 }

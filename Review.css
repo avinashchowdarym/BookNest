@@ -14,6 +14,10 @@
     --book-name: 1.462rem;
     --title-size: 2.5rem;
 }
+
+a{
+    text-decoration: none;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;

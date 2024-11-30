@@ -158,7 +158,8 @@ a {
 }
 .blog-section{
     border-radius: 0.45rem;
-    margin:0 5rem;
+margin-left: 4rem;
+margin-right: 4rem;
 box-shadow: 0px 1px 20px 4px  rgb(210, 207, 207);
 }
 .blog-title {
@@ -177,13 +178,13 @@ box-shadow: 0px 1px 20px 4px  rgb(210, 207, 207);
 }
 
 .articles {
-    margin: 0 9rem;
+    /* margin: 0 9rem; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .article {
-    margin: 1rem;
+    margin:1rem 2.65rem;
     border: 0.15rem solid var(--input-background);
     border-radius: 0.45rem;
 }

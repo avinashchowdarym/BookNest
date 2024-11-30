@@ -13,7 +13,9 @@
   --book-name: 1.462rem;
   --title-size: 2.5rem;
 }
-
+a{
+    text-decoration: none;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -151,6 +153,10 @@ body {
     width: 70%;
     margin: 20px auto;
     overflow-x: hidden;
+    border-radius: 0.45rem;
+    /* margin-left: 4rem;
+    margin-right: 4rem; */
+    box-shadow: 8px 10px 20px 7px  rgb(210, 207, 207);
   }
   
   table {
@@ -160,8 +166,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   h1{
-    border-bottom: 1px solid gainsboro;
-    padding: 3rem;
+    padding: 2.5rem 3rem;
     color: #1a1668;
     text-align: center;
   }

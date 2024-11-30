@@ -69,12 +69,13 @@ body {
 }
 
 .search-svg {
+    margin-left: -2rem;
     height: 2.5rem;
     width: 2.5rem;
     position: absolute;
     border-top-right-radius: 0.45rem;
     border-bottom-right-radius: 0.45rem;
-    background-color: var(--input-background);
+    background-color: #edebeb;
 }
 
 .icon-container a {

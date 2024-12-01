@@ -12,9 +12,9 @@ for (let i = 0; i < 100; i++) {
 
 // Variables for controlling the sliding
 let indexChoice = 0;
-const slideWidthChoice = choices[0].offsetWidth; // Width of one choice
-const delayChoice = 2000; // Time delay between slides
-let isHoveredChoice = false; // Flag to pause the slider when hovered
+const slideWidthChoice = choices[0].offsetWidth; 
+const delayChoice = 2000; 
+let isHoveredChoice = false; 
 
 // Function to slide the choices
 function slideBooksChoice() {
@@ -28,7 +28,7 @@ function slideBooksChoice() {
     if (indexChoice >= choices.length * 100) {
         choiceContent.style.transition = 'none'; 
         indexChoice = 0; // Reset the index
-        choiceContent.style.transform = `translateX(0)`; // Reset the position
+        choiceContent.style.transform = `translateX(0)`; 
     }
 }
 

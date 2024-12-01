@@ -6,8 +6,8 @@ const books = Array.from(document.querySelectorAll('.books'));
 // Clone the books 100 times to ensure a continuous sliding effect
 for (let i = 0; i < 100; i++) {
   books.forEach((book) => {
-    const clone = book.cloneNode(true); // Clone the book
-    bookContainer.appendChild(clone);  // Append the clone to the container
+    const clone = book.cloneNode(true);
+    bookContainer.appendChild(clone);  
   });
 }
 

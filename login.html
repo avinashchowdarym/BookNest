@@ -10,6 +10,27 @@
 </head>
 
 <body>
+        <div class="header">
+            <div class="logo">
+                <img src="./Images/BOOK NEST.png" alt="">
+            </div>
+            <div class="search-bar">
+                <input type="text" name="search-bar" placeholder="Search Books Here " class="input-box" />
+                <img src="./Images/Search.svg" alt="" class="search-svg">
+            </div>
+            <div class="icon-container">
+                <a href="Favorite.html"> <img src="./Images/heart-icon.svg" alt="" class="svg"></a>
+            </div>
+            <div class="user-profile">
+                <a href="login.html"><button>Login</button></a>
+            </div>
+        </div>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="Catalog.html">Catalog</a>
+            <a href="Blog.html">Blog</a>
+            <a href="Review.html">Review</a>
+        </div>
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
@@ -19,10 +40,18 @@
                 <p class="role">Web Developer</p>
             </div>
             <ul class="menu">
-                <li>Profile</li>
-                <li>My Favorite Books</li>
-                <li>Review</li>
-                <li>Log Out</li>
+                <a href="login.html">
+                    <li>Profile</li>
+                </a>
+                <a href="Favorite.html">
+                    <li>My Favorite Books</li>
+                </a>
+                <a href="Review.html">
+                    <li>Review</li>
+                </a>
+                <a href="#">
+                    <li>Log Out</li>
+                </a>
             </ul>
         </aside>
 
@@ -60,11 +89,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 <h2>Contact Information</h2>
                 <form>
                     <div class="form-row">
-                        <label>Contact Number:</label>
+                        <label>Contact&nbsp;Number:</label>
                         <input type="text" placeholder="Contact Number">
                     </div>
                     <div class="form-row">
-                        <label>Email Address:</label>
+                        <label>Email&nbsp;Address:</label>
                         <input type="email" placeholder="Email Address">
                     </div>
                     <div class="form-row">
@@ -80,7 +109,53 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             <button>Save Info</button>
 
         </main>
-        
+
+    </div>
+    <div class="footer-section">
+        <div class="catalog-details">
+            <div class="img"><img src="./Images/BOOK NEST.png" alt=""></div>
+            <div class="catalog-desc">BookNest is your gateway to discovering, exploring, and connecting with books
+                that
+                inspire and captivate. Whether you’re diving into timeless classics, uncovering new favorites, or,
+                BookNest brings together everything you need for an enriching
+                reading experience.</div>
+            <div class="social-icon">
+                <a href="#"><img src="./Images/Google.svg" alt="Google"></a>
+                <a href="#"> <img src="./Images/linkedin.svg" alt="Lnkedin"></a>
+                <a href="#"><img src="./Images/twitter.svg" alt="X"></a>
+            </div>
+        </div>
+        <div class="footer-link">
+            <div class="footer-title">Our Links</div>
+            <a href="#">About us</a>
+            <a href="#">Contact us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">FAQs</a>
+        </div>
+        <div class="about-booknest">
+            <div class="footer-title">BookNest</div>
+            <a href="#">BookNest</a>
+            <a href="#">Services</a>
+            <a href="#">Book Details</a>
+            <a href="#">Blog Details</a>
+        </div>
+        <div class="about-resources">
+            <div class="footer-title">Resource</div>
+
+            <a href="#">Help Center</a>
+            <a href="#">Library</a>
+            <a href="#">Login</a>
+            <a href="#">Partner</a>
+        </div>
+        <div class="about-add">
+            <div class="add-title"></div>
+            <div class="add-desc"></div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <div class="copy"> &copy;Team BookNest... 2024 All Rights Reserved
+        </div>
+        <div class="team">Made with <img src="./Images/Heart A.svg" alt=""> by <span>Team A-Stack</span></div>
     </div>
 </body>
 

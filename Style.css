@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -140,23 +139,6 @@ a {
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 768px) {
-    .search-svg {
-        display: none;
-    }
-
-    .header {
-        padding: 0;
-    }
-
-    .icon-container a {
-        display: none;
-    }
-
-    .input-box {
-        border-radius: 0.45rem;
-    }
-}
 
 .banner {
     background-color: #060340;
@@ -253,36 +235,11 @@ a {
 
 
 
-@media screen and (max-width:768px) {
-    .banner {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .left-content {
-        padding: 1rem;
-        padding-bottom: 0;
-    }
-
-    .partner {
-        display: none;
-    }
-
-    .right-content {
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-
-    }
-
-}
-
 .suggested-content {
     margin-top: 6rem;
     padding-top: 3rem;
     background-color: var(--input-background);
+    overflow: hidden;
 }
 
 .suggested-content .title {
@@ -293,7 +250,7 @@ a {
 }
 
 .suggested-content .desc {
-    max-width: 90%;
+    /* max-width: 90%; */
     padding-left: 10rem;
     text-align: center;
     line-height: var(--line-height);
@@ -304,8 +261,10 @@ a {
 .book-container {
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(700, 1fr);
+    transition: transform 0.5s ease-in-out;
 }
+
 
 .books {
     padding: 1rem;
@@ -347,20 +306,6 @@ a {
 
 }
 
-@media screen and (max-width:768px) {
-    .book-container {
-
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-
-    .books {
-        margin: 0;
-        padding: 0;
-    }
-
-}
 
 .inner-page {
     margin: 5rem;
@@ -432,20 +377,10 @@ a {
     }
 }
 
-@media screen and (max-width:768px) {
-    .inner-page {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 .choice-content {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 2rem;
-    overflow: scroll;
-    scrollbar-width: none;
-
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease-in-out;
 }
 
 .choice-1 img,
@@ -513,19 +448,6 @@ a {
     width: 1.6rem;
 }
 
-@media screen and (max-width:768px) {
-    .choice-content {
-        margin: 0 3rem;
-        padding: 0 2rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .editors-choice-container .desc {
-        padding: 1rem 4rem;
-    }
-
-}
 
 .booknest-exclusive-container {
     margin-top: 8rem;
@@ -555,6 +477,7 @@ a {
 
 .book-content {
     display: flex;
+
 }
 
 .left-box img {
@@ -567,7 +490,12 @@ a {
 
 .book-details {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    /* transition: transform 0.5s ease-in-out; */
+
 }
 
 .right-box span {
@@ -607,31 +535,7 @@ a {
     color: #ffffff;
 }
 
-@media screen and (max-width:768px) {
-    .booknest-exclusive-container {
-        display: flex;
-        flex-direction: column;
-    }
 
-    .booknest-content .desc {
-        padding: 1rem 1rem;
-    }
-
-    .book-details {
-        padding: 0 2rem;
-        flex-direction: column;
-    }
-
-    .book-content {
-        padding: 1.5rem;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-
-    }
-
-
-}
 
 .testimonial-section .title {
     padding: 2rem 0;
@@ -691,17 +595,7 @@ a {
     color: var(--title);
 }
 
-@media screen and (max-width:768px) {
-    .testimonial-section .desc {
-        margin: 1rem 1rem;
-    }
 
-    .booknest-voices {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-    }
-}
 
 .blog-title {
     margin-top: 2rem;
@@ -716,10 +610,17 @@ a {
     padding: 1.5rem 18rem;
     color: var(--text-color);
 }
+.blog-section{
+position: relative;
+overflow: hidden;
+width: 100%;
 
+}
 .articles {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    transition: transform 1s ease;
+
 }
 
 .article {
@@ -754,26 +655,6 @@ a {
 .article p img {
     height: 1.2rem;
     width: 1.2rem;
-}
-
-@media screen and (max-width:768px) {
-    .blog-desc {
-        padding: 1rem 1rem;
-    }
-
-    .articles {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-        margin: 0 8rem;
-    }
-
 }
 
 
@@ -876,29 +757,14 @@ a {
     color: var(--gray);
 }
 
-@media screen and (max-width:768px) {
-    .newsletter-content {
-        max-width: 80%;
-        margin: 2rem;
-    }
-
-    .news-left {
-        display: none;
-    }
-
-    .news-right {
-        margin: 2rem 1rem;
-    }
-
-}
 
 .footer-section {
     margin: 3.5rem 2rem;
     padding: 0.5rem 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-top: 2px solid var(--input-background);
-    border-bottom: 2px solid var(--input-background);
+    border-top: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
 }
 
 .catalog-details .img img {
@@ -970,14 +836,4 @@ a {
 .copy-right .team span {
     font-weight: bold;
     color: var(--primary-color);
-}
-
-@media screen and (max-width:768px) {
-    .footer-section {
-
-        display: flex;
-        align-items: center;
-
-
-    }
 }

@@ -245,8 +245,8 @@ body {
     padding: 0.5rem 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-top: 2px solid var(--input-background);
-    border-bottom: 2px solid var(--input-background);
+    border-top: 2px solid gainsboro;
+    border-bottom: 2px solid gainsboro;
 }
 
 .catalog-details .img img {

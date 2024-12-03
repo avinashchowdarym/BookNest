@@ -1,42 +1,43 @@
-// Get the choice-content container and all book choices
-const choiceContent = document.querySelector('.choice-content');
-const choices = Array.from(document.querySelectorAll('.choice-content .choice-1, .choice-content .choice-2, .choice-content .choice-3, .choice-content .choice-4, .choice-content .choice-5, .choice-content .choice-6'));
+// Select the new item container
+const itemContainer = document.querySelector('.choice-content');
+// Select all item elements
+const items = Array.from(document.querySelectorAll('.choice'));
 
-// Clone the choices 100 times to simulate infinite sliding
+// Clone the items 100 times to ensure a continuous sliding effect
 for (let i = 0; i < 100; i++) {
-    choices.forEach((choice) => {
-        const clone = choice.cloneNode(true); // Clone each choice
-        choiceContent.appendChild(clone);     // Append the clone to the container
-    });
+  items.forEach((item) => {
+    const clone = item.cloneNode(true);
+    itemContainer.appendChild(clone);  
+  });
 }
 
-// Variables for controlling the sliding
-let indexChoice = 0;
-const slideWidthChoice = choices[0].offsetWidth; 
-const delayChoice = 2000; 
-let isHoveredChoice = false; 
+// Variables for sliding
+let currentIndex = 0;          // Track the current item index
+const itemWidth = items[0].offsetWidth; // Width of one item (assumes all are the same)
+const slideInterval = 2000;     // 2 seconds delay between slides
+let isItemHovered = false;  // Track hover state
 
-// Function to slide the choices
-function slideBooksChoice() {
-    if (isHoveredChoice) return; // Pause the slider when hovered
+// Function to slide items
+function slideItems() {
+  if (isItemHovered) return; // Pause sliding if hovered
 
-    indexChoice++; 
-    choiceContent.style.transform = `translateX(-${indexChoice * slideWidthChoice}px)`; // Move the container
-    choiceContent.style.transition = 'transform 0.5s ease-in-out';
+  currentIndex++; // Move to the next item
+  itemContainer.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+  itemContainer.style.transition = 'transform 0.5s ease-in-out';
 
-    // Reset the sliding once it reaches the end of the cloned elements
-    if (indexChoice >= choices.length * 100) {
-        choiceContent.style.transition = 'none'; 
-        indexChoice = 0; // Reset the index
-        choiceContent.style.transform = `translateX(0)`; 
-    }
+  // If all clones are slid, reset the index to create an infinite effect
+  if (currentIndex >= items.length * 100) {
+    itemContainer.style.transition = 'none'; // Temporarily disable transition
+    currentIndex = 0; // Reset index
+    itemContainer.style.transform = `translateX(0)`;
+  }
 }
 
-// Start the sliding with an interval
-let intervalChoice = setInterval(slideBooksChoice, delayChoice);
+// Set an interval to slide items every 2 seconds
+let itemInterval = setInterval(slideItems, slideInterval);
 
-// Pause the sliding when the mouse hovers over the container
-choiceContent.addEventListener('mouseover', () => (isHoveredChoice = true));
+// Pause the sliding on hover
+itemContainer.addEventListener('mouseover', () => (isItemHovered = true));
 
-// Resume the sliding when the mouse leaves the container
-choiceContent.addEventListener('mouseout', () => (isHoveredChoice = false));
+// Resume the sliding when hover is removed
+itemContainer.addEventListener('mouseout', () => (isItemHovered = false));

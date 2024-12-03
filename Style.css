@@ -38,22 +38,11 @@ a {
     justify-content: space-between;
     padding: 1rem 10rem;
     border-bottom: 0.09rem solid var(--text-color);
-
 }
 
 .logo img {
     width: 15rem;
     object-fit: contain;
-}
-
-.logo span {
-    font-weight: bold;
-    font-size: 4.9rem;
-}
-
-.logo p {
-    padding-left: 8rem;
-    color: #EAA451;
 }
 
 .input-box {
@@ -113,7 +102,6 @@ a {
 
 .user-profile button:hover {
     background-color: var(--primary-hover);
-
 }
 
 .nav-container {
@@ -139,7 +127,6 @@ a {
     transform: scale(1.1);
 }
 
-
 .banner {
     background-color: #060340;
     background-image: url(./Images/waveelement.png);
@@ -150,8 +137,6 @@ a {
 
 .right-content {
     line-height: 0 !important;
-
-
 }
 
 .left-content {
@@ -159,12 +144,10 @@ a {
     padding-left: 10rem;
 }
 
-
 .book-name {
     font-size: 3.5rem;
     font-weight: bold;
     line-height: var(--bs-body-line-height);
-
 }
 
 .author-info {
@@ -233,8 +216,6 @@ a {
     height: 1.7rem;
 }
 
-
-
 .suggested-content {
     margin-top: 6rem;
     padding-top: 3rem;
@@ -250,7 +231,6 @@ a {
 }
 
 .suggested-content .desc {
-    /* max-width: 90%; */
     padding-left: 10rem;
     text-align: center;
     line-height: var(--line-height);
@@ -303,9 +283,7 @@ a {
     transform: scale(1.09);
     color: #ffffff;
     background-color: var(--title);
-
 }
-
 
 .inner-page {
     margin: 5rem;
@@ -315,19 +293,13 @@ a {
     grid-gap: 1.5rem;
 }
 
-.inner-page {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
-}
-
 .pages {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 2rem 1rem;
 }
 
 .pages svg {
@@ -351,10 +323,14 @@ a {
     color: var(--title);
 }
 
+.pages:hover {
+    box-shadow: 8px 10px 20px 4px gainsboro;
+    border-radius: 0.45rem;
+}
+
 .pages:hover svg {
     animation: svg 0.5s ease-in-out;
 }
-
 @keyframes svg {
     0% {
         transform: translateX(0);
@@ -379,16 +355,19 @@ a {
 
 .choice-content {
     display: flex;
-    gap: 2rem;
     transition: transform 0.5s ease-in-out;
 }
 
-.choice-1 img,
-.choice-2 img,
-.choice-3 img,
-.choice-4 img,
-.choice-5 img,
-.choice-6 img {
+.choice {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.choice img {
+
     border-radius: 0.45rem;
 }
 
@@ -444,10 +423,9 @@ a {
 
 .genre-desc img {
     padding: 0.1rem;
-    height: 1.6rem;
-    width: 1.6rem;
+    height: 1.45rem;
+    width: 1.45rem;
 }
-
 
 .booknest-exclusive-container {
     margin-top: 8rem;
@@ -477,11 +455,9 @@ a {
 
 .book-content {
     display: flex;
-
 }
 
 .left-box img {
-
     height: 32rem;
     width: 23rem;
     margin-right: 2.5rem;
@@ -490,18 +466,14 @@ a {
 
 .book-details {
     display: flex;
-    /* justify-content: space-between; */
     overflow: hidden;
     position: relative;
     width: 100%;
-    /* transition: transform 0.5s ease-in-out; */
-
 }
 
 .right-box span {
     color: var(--title);
     padding: 0.5rem 0;
-
 }
 
 .right-box .book-title {
@@ -534,8 +506,6 @@ a {
     background-color: var(--title);
     color: #ffffff;
 }
-
-
 
 .testimonial-section .title {
     padding: 2rem 0;
@@ -595,8 +565,6 @@ a {
     color: var(--title);
 }
 
-
-
 .blog-title {
     margin-top: 2rem;
     padding: 0.6rem;
@@ -610,17 +578,16 @@ a {
     padding: 1.5rem 18rem;
     color: var(--text-color);
 }
-.blog-section{
-position: relative;
-overflow: hidden;
-width: 100%;
 
+.blog-section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
 }
+
 .articles {
     display: flex;
-    /* grid-template-columns: repeat(4, 1fr); */
     transition: transform 1s ease;
-
 }
 
 .article {
@@ -656,7 +623,6 @@ width: 100%;
     height: 1.2rem;
     width: 1.2rem;
 }
-
 
 .newsletter-container {
     margin: 0 auto;

@@ -725,8 +725,10 @@ a {
 
 
 .footer-section {
-    margin: 3.5rem 2rem;
+    margin: 3.5rem 0;
     padding: 0.5rem 0;
+    margin-right: 5rem !important;
+    margin-left: 5rem !important;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     border-top: 2px solid gainsboro;

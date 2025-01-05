@@ -23,7 +23,6 @@
 
 
 
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -32,12 +31,12 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    /* display: flex; */
     min-height: 100vh;
     background-color: #f9f9f9;
     overflow-x: hidden;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -148,6 +147,7 @@ a{
     color: var(--primary-hover);
     transform: scale(1.1);
 }
+
 .container {
     margin: 3rem 7rem;
     display: flex;
@@ -156,12 +156,11 @@ a{
     box-shadow: 1px 2px 20px 0.5px rgb(136, 134, 134);
 }
 
-/* Sidebar */
 .sidebar {
     width: 25%;
     margin-top: 5rem;
     margin-bottom: 6rem;
-    padding:0 3rem ;
+    padding: 0 3rem;
     border-right: 1px solid #ddd;
 }
 
@@ -169,7 +168,7 @@ a{
     background-color: #fae4cd;
     padding: 1.5rem 2.5rem;
     text-align: center;
-border-radius: 0.45rem;
+    border-radius: 0.45rem;
 }
 
 .profile-pic {
@@ -178,9 +177,11 @@ border-radius: 0.45rem;
     border-radius: 50%;
     margin-bottom: 10px;
 }
-label{
+
+label {
     padding: 0.6rem 0;
 }
+
 .name {
     padding: 0.5rem;
     font-size: 18px;
@@ -195,7 +196,6 @@ label{
 
 .menu {
     list-style: none;
-    /* padding-bottom: 3rem; */
 }
 
 .menu li {
@@ -214,7 +214,7 @@ label{
 /* Main Content */
 .content {
     width: 60%;
-padding: 2rem 3rem ;
+    padding: 2rem 3rem;
 }
 
 span {
@@ -228,39 +228,40 @@ span {
 .contact-info {
     margin-bottom: 20px;
 }
-form{
+
+form {
     margin-top: 1.8rem;
     padding-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     border-top: 1px solid #EAA451;
 
 }
+
 .form-row {
-    /* padding-top: 2rem; */
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-items: center; */
-    /* margin-bottom: 15px; */
+    
 }
 
 label {
     width: 30%;
     font-size: 1rem;
     color: #484747;
-    /* font-weight: bold; */
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 14px;
 }
-input:focus, textarea:focus-visible{
+
+input:focus,
+textarea:focus-visible {
     border-color: (--primary-color) !important;
 
 }
@@ -278,7 +279,7 @@ textarea {
     width: 100%;
 }
 
-button{
+button {
     margin: 1rem;
     padding: 0.85rem 2.2rem;
     border-radius: 0.56rem;
